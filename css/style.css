@@ -64,27 +64,29 @@ body {
   font-weight: 400;
   letter-spacing: 35px;
   animation-name: moveInLeft;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 16.4px;
   animation-name: moveInRight;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
 
-    transform: translateX(-100%);
+    transform: translateX(-100px);
   }
 
   80% {
-    transform: translateX(5%);
+    transform: translateX(20px);
   }
 
   100% {
@@ -97,11 +99,11 @@ body {
   0% {
     opacity: 0;
 
-    transform: translateX(100%);
+    transform: translateX(100px);
   }
 
   80% {
-    transform: translateX(-5%);
+    transform: translateX(-20px);
   }
 
   100% {
