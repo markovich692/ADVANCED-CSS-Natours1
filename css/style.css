@@ -45,3 +45,17 @@ body {
 .logo {
   height: 35px;
 }
+
+.heading-primary {
+  position: absolute;
+  top: 50vh;
+  left: 55vh;
+}
+
+.heading-primary-main {
+  display: block;
+}
+
+.heading-primary-sub {
+  display: block;
+}
