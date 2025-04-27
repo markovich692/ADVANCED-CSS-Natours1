@@ -51,6 +51,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
@@ -110,4 +111,16 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 40px;
+}
+
+.btn-white {
+  background-color: #fff;
 }
