@@ -5,3 +5,9 @@
 // "scissors", "paper" --> "Player 1 won!"
 // "scissors", "rock" --> "Player 2 won!"
 // "paper", "paper" --> "Draw!"
+
+const whoWon = function (input1, input2) {
+  if (input1 === "scissors" && input2 === "paper") return "Player 1 won";
+  if (input1 === "scissors" && input2 === "rock") return "Player 2 won";
+  if (input1 === input2) return "Draw";
+};
