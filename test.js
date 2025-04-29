@@ -1,6 +1,7 @@
-// Make a simple function called greet that returns the most-famous "hello world!".
+// Let's play! You have to return which player won! In case of a draw return Draw!.
 
-// Style Points
-// Sure, this is about as easy as it gets. But how clever can you be to create
-// the most creative "hello world" you can think of? What is a "hello world"
-// solution you would want to show your friends?
+// Examples(Input1, Input2 --> Output):
+
+// "scissors", "paper" --> "Player 1 won!"
+// "scissors", "rock" --> "Player 2 won!"
+// "paper", "paper" --> "Draw!"
