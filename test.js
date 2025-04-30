@@ -16,7 +16,7 @@
 // function mirror(code) {
 //   const splitInput = code.toLowerCase().split("");
 //   let arr = [];
-  // prettier-ignore
+// prettier-ignore
 //   const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 //   const reversedAlphabet = [...alphabet].reverse(); // use a copy so original isn't reversed
 
@@ -35,9 +35,32 @@
 
 // mirror("Welcome home");
 
+///////////////////////////////////////////////////////////////////////////
 // Return the number (count) of vowels in the given string.
 
 // We will consider a, e, i, o, u as vowels for this Kata (but not y).
 
 // The input string will only consist of lower case letters and/or spaces.
 
+const vowelsCount = function(str){
+
+let vowelsNumber=0;
+const splitString = str.toLowerCase().split('');
+splitString.forEach((letter)=>{
+
+const includesVowels = 'aeiou'.includes(letter) ? 1 : 0;
+
+
+
+vowelsNumber = vowelsNumber + includesVowels;
+
+
+
+}); 
+
+
+return vowelsNumber;
+
+};
+
+vowelsCount("abracadabra");
