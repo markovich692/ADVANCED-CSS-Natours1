@@ -13,24 +13,31 @@
 // To make it a bit more clear: e.g. in case of "abcdefgh" as the second optional parameter,
 //  you replace "a" with "h", "b" with "g" etc. .
 
-function mirror(code) {
-  const splitInput = code.toLowerCase().split("");
-  let arr = [];
+// function mirror(code) {
+//   const splitInput = code.toLowerCase().split("");
+//   let arr = [];
   // prettier-ignore
-  const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-  const reversedAlphabet = [...alphabet].reverse(); // use a copy so original isn't reversed
+//   const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+//   const reversedAlphabet = [...alphabet].reverse(); // use a copy so original isn't reversed
 
-  splitInput.forEach((letter) => {
-    const indexGet = alphabet.findIndex((letterAlph) => {
-      return letterAlph === letter;
-    });
+//   splitInput.forEach((letter) => {
+//     const indexGet = alphabet.findIndex((letterAlph) => {
+//       return letterAlph === letter;
+//     });
 
-    reversedAlphabet[indexGet]
-      ? arr.push(reversedAlphabet[indexGet])
-      : arr.push(" ");
-  });
+//     reversedAlphabet[indexGet]
+//       ? arr.push(reversedAlphabet[indexGet])
+//       : arr.push(" ");
+//   });
 
-  return [arr[0].toUpperCase(), ...arr.slice(1)].join("");
-}
+//   return [arr[0].toUpperCase(), ...arr.slice(1)].join("");
+// }
 
-mirror("Welcome home");
+// mirror("Welcome home");
+
+// Return the number (count) of vowels in the given string.
+
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+// The input string will only consist of lower case letters and/or spaces.
+
