@@ -3,10 +3,11 @@
 //  than two characters or longer than 100 characters,
 //  the function should return "invalid string".
 
-const sequence = function (string) {
+function evenChars(string) {
   const strSplit = string.split("");
 
-  if (strSplit.length === 1 || strSplit.length > 100) return "invalid string";
+  if (strSplit.length === 1 || strSplit.length > 100 || string === "")
+    return "invalid string";
 
   const newStringArray = strSplit
     .map((letter, i) => {
@@ -16,10 +17,4 @@ const sequence = function (string) {
     .filter((letter) => letter !== " ");
 
   return newStringArray;
-};
-
-sequence("abcdefghijklm");
-// sequence("a");
-
-// "abcdefghijklm" --> ["b", "d", "f", "h", "j", "l"]
-// "a"             --> "invalid string"
+}
