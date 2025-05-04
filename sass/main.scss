@@ -1,13 +1,13 @@
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
+@use "abstracts/functions";
+@use "abstracts/mixins";
+@use "abstracts/variables";
 
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/functions";
+@use "base/animations";
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
 
-@import "pages/home.scss";
+@use "pages/home";
 
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
