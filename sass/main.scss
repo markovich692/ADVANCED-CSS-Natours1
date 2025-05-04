@@ -9,20 +9,7 @@
 
 @use "pages/home" as *;
 
-: border-box;
-}
-
-.header {
-  position: relative;
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url(../img/hero-small.jpg);
-  background-size: cover;
-  background-*,
+*,
 *::after,
 *::before {
   margin: 0;
@@ -41,7 +28,20 @@ body {
   line-height: 1.7;
   color: $color-dark-grey;
   padding: 3rem;
-  box-sizingposition: top;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero-small.jpg);
+  background-size: cover;
+  background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {
