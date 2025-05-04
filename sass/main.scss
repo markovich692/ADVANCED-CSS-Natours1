@@ -1,23 +1,28 @@
-@use "abstracts/functions";
-@use "abstracts/mixins";
-@use "abstracts/variables";
+@use "abstracts/functions" as *;
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
 
-@use "base/animations";
-@use "base/base";
-@use "base/typography";
-@use "base/utilities";
+@use "base/animations" as *;
+@use "base/base" as *;
+@use "base/typography" as *;
+@use "base/utilities" as *;
 
-@use "pages/home";
+@use "pages/home" as *;
 
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-dark-grey: #777;
+: border-box;
+}
 
-$color-white: #fff;
-$color-black: #000;
-
-*,
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero-small.jpg);
+  background-size: cover;
+  background-*,
 *::after,
 *::before {
   margin: 0;
@@ -36,20 +41,7 @@ body {
   line-height: 1.7;
   color: $color-dark-grey;
   padding: 3rem;
-  box-sizing: border-box;
-}
-
-.header {
-  position: relative;
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url(../img/hero-small.jpg);
-  background-size: cover;
-  background-position: top;
+  box-sizingposition: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {
