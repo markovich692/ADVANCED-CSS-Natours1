@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: #eee;
+  margin-bottom: $horizontal-gutter;
+}
