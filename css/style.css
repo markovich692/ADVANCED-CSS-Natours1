@@ -96,6 +96,7 @@ body {
 }
 .heading-secondary:hover {
   transform: skewX(15deg) skewY(2deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .btn:link, .btn:visited {
