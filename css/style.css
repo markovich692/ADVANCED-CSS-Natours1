@@ -89,6 +89,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
 }
 
 .btn:link, .btn:visited {

@@ -42,4 +42,6 @@ body {
   text-transform: uppercase;
   //prettier-ignore
   background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+  //clip the background image to the text
+  background-clip: text;
 }
