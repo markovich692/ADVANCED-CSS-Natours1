@@ -45,4 +45,10 @@ body {
   //clip the background image to the text
   background-clip: text;
   color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewX(15deg) skewY(2deg) scale(1.1);
+  }
 }
