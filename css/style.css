@@ -103,6 +103,10 @@ body {
   text-align: center;
 }
 
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -176,7 +180,6 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  background-color: #eee;
 }
 .row::after {
   content: "";
@@ -188,7 +191,6 @@ body {
 }
 .row [class^=col-] {
   float: left;
-  background-color: orangered;
 }
 .row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
@@ -216,7 +218,6 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
