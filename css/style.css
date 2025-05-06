@@ -174,7 +174,7 @@ body {
   animation-fill-mode: backwards;
 }
 
-.btn-text {
+.btn-text:link, .btn-text:visited {
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
   display: inline-block;
